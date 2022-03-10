@@ -1,4 +1,4 @@
-<font size=6><b>CaSilico R Package</b></font> 
+# CaSilico R Package
 
 
 The efficiency of CRISPR-Cas system is highly depends on well-designed CRISPR RNA (crRNA). To facilitate the use of various types of CRISPR-Cas systems by a wide range of researchers, there is a need for development of computational tools to design crRNAs which cover different CRISPR-Cas systems with off-target analysis capability. Numerous crRNA design tools have been developed but nearly all of them are dedicated to design crRNA for genome editing. 
@@ -17,8 +17,8 @@ Casilico workflow. (A) Casilico accepts a single or a set of DNA or RNA sequence
 
 
 
-<font size=6><b>Installation</b></font> 
+# Installation
 
-library("devtools")
+`library("devtools")
 
-install_github("mrb20045/CaSilico")
+install_github("mrb20045/CaSilico")`
