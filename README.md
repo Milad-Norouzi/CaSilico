@@ -12,3 +12,10 @@ Casilico was successfully applied to design crRNAs for different genes in SARS-C
 ![image](https://user-images.githubusercontent.com/9910942/157640017-c3a6fd97-45ac-4e81-be58-89411f0819eb.png)
 
 Casilico workflow. (A) Casilico accepts a single or a set of DNA or RNA sequences to be scanned for crRNA designing. (B) When more than one sequences is given as input, the conserved regions among them automatically detect considering conservation threshold and one of the two different approaches for identifying conserved regions. (C) A sliding window (stride of 1 nt) is employed across the single sequences or conserved region of multiple sequences to specify potentail target sites. (D) Casilico applies multiple criteria for crRNA designing, performs off-target analysis and returns outputs in an interactive graphical interface and some files such as MSA and secondary structure (E & F).
+
+
+
+<font size=6><b>Installation</b></font> 
+
+library("devtools")
+install_github("mrb20045/CaSilico")
