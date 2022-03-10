@@ -19,6 +19,20 @@ Casilico workflow. (A) Casilico accepts a single or a set of DNA or RNA sequence
 
 # Installation
 
-`library("devtools")
+```
+library("devtools")
 
-install_github("mrb20045/CaSilico")`
+install_github("mrb20045/CaSilico")
+```
+
+
+
+# A quick example to use CaSilico package
+```
+library("CaSilico")
+
+
+```
+
+# License
+GPL-3
