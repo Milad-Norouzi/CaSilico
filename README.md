@@ -33,6 +33,75 @@ install_github("mrb20045/CaSilico")
 library("CaSilico")
 
 
+#Run with fasta_file_location
+
+data<-paste0(system.file(package = "CaSilico"),"/data/3D.fasta")
+CaSilico(Results_folder_name="Example",
+         fasta_file_location=data,
+         Accession_Number=NULL,
+         CRISPR_Types=c("casVI_A"),
+         method = 1,
+         mismatch_threshold=0.98,
+         off_Target = F,
+         ask_question = F)
+
+
+
+
+#Run with fasta_file_location and off-target prediction
+
+data<-paste0(system.file(package = "CaSilico"),"/data/3D.fasta")
+
+genome_dir<-paste0(system.file(package = "CaSilico"),"/dependency/genomes_off_target")
+
+location_of_off_target_sequene_file=file.path(genome_dir,list.files(genome_dir))
+
+name_of_off_target_sequence_file=c("Genome1","Genome2","Genome3")
+
+CaSilico(Results_folder_name="Example2",
+         fasta_file_location=data,
+         Accession_Number=NULL,
+         CRISPR_Types=c("casVI_A","casVI_B","casVI_D","casV_A","casV_B","casV_F1"),
+         method = 1,
+         mismatch_threshold=0.98,
+         off_Target = T,
+         ask_question = F,
+         Organism=NULL,
+         local_file_for_off_target=T,
+         location_of_off_target_sequene_file=location_of_off_target_sequene_file,
+         name_of_off_target_sequence_file=name_of_off_target_sequence_file)
+
+
+
+
+ #Run with fasta_file_location
+
+ CaSilico(Results_folder_name="Example3",
+          Accession_Number=c("U15717", "U15718"),
+          CRISPR_Types=c("casVI_A","casVI_B"),
+          method = 1,
+          mismatch_threshold=0.98,
+          off_Target = F,
+          ask_question = F)
+
+
+
+
+ #Run with coordinate
+ CaSilico(Results_folder_name="Example4",
+          seq_cordinate=list(chromosome=c("1","1"),
+                             start=c("2000","2000"),
+                             end=c("2150","2150"),
+                             strand=c("-","-"),
+                             species = c("bos_taurus","bos_taurus")),
+          CRISPR_Types=c("casVI_B","casVI_A"),
+          method = 1,
+          mismatch_threshold=0.98,
+          off_Target = F,
+          ask_question = F)
+
+
+
 ```
 
 # License
