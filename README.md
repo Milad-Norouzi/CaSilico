@@ -6,3 +6,4 @@ Casilico outperforms previous crRNA design tools in the following respects: 1) s
 
 Casilico was successfully applied to design crRNAs for different genes in SARS-CoV-2 genome, as some of the crRNAs have been experimentally tested in the previous studies.
 
+![image](https://user-images.githubusercontent.com/9910942/157640017-c3a6fd97-45ac-4e81-be58-89411f0819eb.png)
